@@ -3,12 +3,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".MenuFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textView"
+        android:layout_width="411dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:text="Кухня"
+        android:textAlignment="center"
+        android:textSize="24sp"></androidx.appcompat.widget.AppCompatTextView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/pizzaList"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_marginTop="30dp"
+        app:layoutManager="LinearLayoutManager"
 
+        />
 </FrameLayout>
